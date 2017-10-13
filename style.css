@@ -39,3 +39,90 @@ img {
     height: 300px;
     margin-top: 5px;
 }
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: 500px;
+    height: 200px;
+    padding:10px;
+    position: relative;
+    text-align: center;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
+
+.skill a{
+    text-decoration:none;
+    cursor: pointer;
+    color: white;
+}
+
+.detailLarge{
+    display: none;
+}
+
+/*Ipad and Tablets*/
+@media screen and (min-width : 500px) and ( max-width: 900px){
+    .skill{
+        width: 100%;
+        height: 400px;
+    }
+
+    .detail{
+        height: 400px;
+    }
+} 
+
+/*Old Pc to new ones*/
+@media screen and (min-width : 901px){
+    .detail{
+        display: none;
+    }
+
+    .container{
+        flex-wrap: nowrap;
+    }
+
+    .featured h2{
+        padding-left: 10px;
+    }
+
+    .skill{
+        width: 100%;
+        height: 300px;
+    }
+
+    .detailLarge{
+        display: block;
+        height: 400px;
+        margin-top: 5px;
+    }
+}
