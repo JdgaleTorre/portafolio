@@ -79,7 +79,7 @@ img {
     background-color: white;
 }
 
-.skill a{
+a{
     text-decoration:none;
     cursor: pointer;
     color: white;
@@ -88,6 +88,26 @@ img {
 .detailLarge{
     display: none;
 }
+
+.socialNetworks{
+    margin: 5px;
+    font-size: 30px;
+    display: flex;
+}
+
+.network{
+    margin: 5px;
+}
+
+.network span{
+    font-size: 20px;
+}
+
+.pull-right {
+    position: absolute;
+    right: 16px;
+}
+
 
 /*Ipad and Tablets*/
 @media screen and (min-width : 500px) and ( max-width: 900px){
@@ -122,7 +142,7 @@ img {
 
     .detailLarge{
         display: block;
-        height: 400px;
+        height: 370px;
         margin-top: 5px;
     }
 }
